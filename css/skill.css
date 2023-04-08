@@ -1,0 +1,76 @@
+/* skill style start */
+.skill-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skill-heading h1{
+    font-family: Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0;
+    padding-top: 2rem;
+}
+.skill-heading h3{
+    font-family: 'Courier New', monospace;
+    color: #419e5d;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    /* margin: 0; */
+}
+.skill-heading .hr1{
+    height: 4px;
+    width: 400px;
+    border: 0;
+    background-image: linear-gradient(to right, transparent, #419e5d, transparent);
+    margin-top: 0;
+    align-self: center;
+    /* color: linear-gradient(90deg, #9dffde 20%, transparent 100%); */
+}
+.skill-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+.skill-part{
+    width: 50%;
+    padding: 40px 70px;
+}
+.skill-part-1{
+    width: 90%;
+    padding: 40px 70px;
+}
+.skill-part h3,
+.skill-part-1 h3{
+    font-family: Tahoma, sans-serif;
+    color: yellow;
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.skill-part .hr2{
+    height: 3px;
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right, #419e5d, transparent);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.skill-img{
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+.skill-img:hover{
+    transform: scale(1.15);
+}
+@media (max-width:835px) {
+    .skill-part{
+        width: 100%;
+    }
+}

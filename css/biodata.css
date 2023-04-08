@@ -1,0 +1,145 @@
+.biodata-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.biodata-heading h1{
+    font-family: Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0;
+    padding-top: 2rem;
+}
+.biodata-heading h3{
+    font-family: 'Courier New', monospace;
+    color: #419e5d;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    /* margin: 0; */
+}
+.biodata-heading .hr1{
+    height: 4px;
+    width: 400px;
+    border: 0;
+    background-image: linear-gradient(to right, transparent, #419e5d, transparent);
+    margin-top: 0;
+    align-self: center;
+    /* color: linear-gradient(90deg, #9dffde 20%, transparent 100%); */
+}
+.bd-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:baseline;
+    margin: 40px;
+}
+.bd-part{
+    width: 35rem;
+    height:auto;
+    /* background-color: blueviolet; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.bd-part h2{
+    font-family: Tahoma, sans-serif;
+    color: yellow;
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.hr2{
+    height: 3px;
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right, #419e5d, transparent);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.timeline {
+position: relative;
+max-width: 1200px;
+margin: 0 auto;
+z-index: -1;
+}
+.timeline h2{
+    font-size: 1.3rem;
+}
+.timeline ul {
+    padding: 0.5rem;
+}
+.timeline ul li{
+    font-size: 1.1rem;
+}
+.timeline::after {
+content: '';
+position: absolute;
+width: 6px;
+background-color: rgb(255, 255, 255, 0.3);
+top: 0;
+bottom: 0;
+left: 5%;
+margin-left: -3px;
+}
+.container {
+padding: 10px 40px;
+position: relative;
+background-color: inherit;
+width: 75%;
+margin-bottom: 20px;
+}
+
+.container::after {
+content: '';
+position: absolute;
+width: 25px;
+height: 25px;
+right: -17px;
+background-color: #ffffff;
+border: 4px solid #419e5d;
+top: 15px;
+border-radius: 50%;
+z-index: 1;
+}
+.right {
+left: 5%;
+}
+
+.right::before {
+content: " ";
+height: 0;
+position: absolute;
+top: 22px;
+width: 0;
+z-index: 1;
+left: 30px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+
+.right::after {
+left: -16px;
+}
+
+.content {
+padding: 20px 30px;
+background-color: white;
+position: relative;
+border-radius: 6px;
+}
+
+#biodata .content h2{
+    color: #303030;
+}
+
+@media (max-width:450px) {
+    .container{
+        width: 95%;
+    }
+}
